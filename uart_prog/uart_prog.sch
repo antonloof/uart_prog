@@ -69,7 +69,7 @@ F 3 "~" H 3300 3250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:USB_B_Micro J1
+L uart_prog-rescue:USB_B_Micro-Connector J1
 U 1 1 608888FB
 P 2700 3450
 F 0 "J1" H 2757 3917 50  0000 C CNN
@@ -283,15 +283,15 @@ F 3 "~" H 8600 3550 50  0001 C CNN
 	1    8600 3550
 	1    0    0    -1  
 $EndComp
-Text GLabel 8400 3350 0    50   Input ~ 0
+Text GLabel 8400 3550 0    50   Input ~ 0
 rx
-Text GLabel 8400 3450 0    50   Input ~ 0
+Text GLabel 8400 3650 0    50   Input ~ 0
 tx
 Text GLabel 8400 3750 0    50   Input ~ 0
 5v
-Text GLabel 8400 3550 0    50   Input ~ 0
+Text GLabel 8400 3350 0    50   Input ~ 0
 EN
-Text GLabel 8400 3650 0    50   Input ~ 0
+Text GLabel 8400 3450 0    50   Input ~ 0
 BOOT_OPT
 $Comp
 L power:GND #PWR0105
@@ -395,7 +395,7 @@ U 1 1 608AE079
 P 4300 2550
 F 0 "C3" H 4392 2596 50  0000 L CNN
 F 1 "22u" H 4392 2505 50  0000 L CNN
-F 2 "Capacitor_SMD:C_01005_0402Metric" H 4300 2550 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 4300 2550 50  0001 C CNN
 F 3 "~" H 4300 2550 50  0001 C CNN
 	1    4300 2550
 	1    0    0    -1  
@@ -431,17 +431,6 @@ Text GLabel 5750 4150 2    50   Input ~ 0
 rxled
 Text GLabel 8200 2350 3    50   Input ~ 0
 rxled
-$Comp
-L Device:LED_Small D1
-U 1 1 609039AE
-P 8200 2250
-F 0 "D1" V 8246 2182 50  0000 R CNN
-F 1 "green" V 8155 2182 50  0000 R CNN
-F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 8200 2250 50  0001 C CNN
-F 3 "~" V 8200 2250 50  0001 C CNN
-	1    8200 2250
-	0    -1   -1   0   
-$EndComp
 Text GLabel 8200 1950 1    50   Input ~ 0
 vccio
 $Comp
@@ -457,6 +446,16 @@ F 3 "~" H 8600 2050 50  0001 C CNN
 $EndComp
 Text GLabel 8600 2350 3    50   Input ~ 0
 txled
+Text GLabel 8600 1950 1    50   Input ~ 0
+vccio
+Text Label 3300 3450 0    50   ~ 0
+in+
+Text Label 3250 3550 0    50   ~ 0
+in-
+Text Label 4300 3500 0    50   ~ 0
+in2+
+Text Label 4250 3450 0    50   ~ 0
+in2-
 $Comp
 L Device:LED_Small D2
 U 1 1 60905532
@@ -468,40 +467,15 @@ F 3 "~" V 8600 2250 50  0001 C CNN
 	1    8600 2250
 	0    -1   -1   0   
 $EndComp
-Text GLabel 8600 1950 1    50   Input ~ 0
-vccio
-Text GLabel 8400 4350 0    50   Input ~ 0
-dtr
-Text GLabel 8400 4550 0    50   Input ~ 0
-rts
 $Comp
-L Connector:TestPoint TP1
-U 1 1 6090AF77
-P 8400 4350
-F 0 "TP1" V 8354 4538 50  0000 L CNN
-F 1 "TestPoint" V 8445 4538 50  0000 L CNN
-F 2 "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm" H 8600 4350 50  0001 C CNN
-F 3 "~" H 8600 4350 50  0001 C CNN
-	1    8400 4350
-	0    1    1    0   
+L Device:LED_Small D1
+U 1 1 609039AE
+P 8200 2250
+F 0 "D1" V 8246 2182 50  0000 R CNN
+F 1 "green" V 8155 2182 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 8200 2250 50  0001 C CNN
+F 3 "~" V 8200 2250 50  0001 C CNN
+	1    8200 2250
+	0    -1   -1   0   
 $EndComp
-$Comp
-L Connector:TestPoint TP2
-U 1 1 6090B50B
-P 8400 4550
-F 0 "TP2" V 8354 4738 50  0000 L CNN
-F 1 "TestPoint" V 8445 4738 50  0000 L CNN
-F 2 "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm" H 8600 4550 50  0001 C CNN
-F 3 "~" H 8600 4550 50  0001 C CNN
-	1    8400 4550
-	0    1    1    0   
-$EndComp
-Text Label 3300 3450 0    50   ~ 0
-in+
-Text Label 3250 3550 0    50   ~ 0
-in-
-Text Label 4300 3500 0    50   ~ 0
-in2+
-Text Label 4250 3450 0    50   ~ 0
-in2-
 $EndSCHEMATC
