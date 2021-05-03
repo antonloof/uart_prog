@@ -69,7 +69,7 @@ F 3 "~" H 3300 3250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L uart_prog-rescue:USB_B_Micro-Connector J1
+L uart_prog-rescue:USB_B_Micro-Connector-uart_prog-rescue J1
 U 1 1 608888FB
 P 2700 3450
 F 0 "J1" H 2757 3917 50  0000 C CNN
@@ -111,17 +111,17 @@ Wire Wire Line
 $Comp
 L Switch:SW_SPDT SW1
 U 1 1 6088BAF4
-P 6850 2200
-F 0 "SW1" H 6850 1875 50  0000 C CNN
-F 1 "SW_SPDT" H 6850 1966 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 6850 2200 50  0001 C CNN
-F 3 "~" H 6850 2200 50  0001 C CNN
-	1    6850 2200
+P 6900 2250
+F 0 "SW1" H 6900 1925 50  0000 C CNN
+F 1 "SW_SPDT" H 6900 2016 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 6900 2250 50  0001 C CNN
+F 3 "~" H 6900 2250 50  0001 C CNN
+	1    6900 2250
 	-1   0    0    1   
 $EndComp
-Text GLabel 6650 2100 0    50   Input ~ 0
+Text GLabel 6700 2150 0    50   Input ~ 0
 5v
-Text GLabel 6650 2300 0    50   Input ~ 0
+Text GLabel 6700 2350 0    50   Input ~ 0
 3v3
 Text GLabel 3900 3250 2    50   Input ~ 0
 5v
@@ -178,7 +178,7 @@ $EndComp
 Connection ~ 2700 3850
 Text GLabel 4350 3150 0    50   Input ~ 0
 3v3
-Text GLabel 7050 2200 2    50   Input ~ 0
+Text GLabel 7100 2250 2    50   Input ~ 0
 vccio
 Text GLabel 5150 2400 1    50   Input ~ 0
 vccio
@@ -275,33 +275,33 @@ vccio
 $Comp
 L Connector_Generic:Conn_01x06 J2
 U 1 1 6089F7A4
-P 8600 3550
-F 0 "J2" H 8680 3542 50  0000 L CNN
-F 1 "Conn_01x06" H 8680 3451 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Horizontal" H 8600 3550 50  0001 C CNN
-F 3 "~" H 8600 3550 50  0001 C CNN
-	1    8600 3550
+P 8600 3850
+F 0 "J2" H 8680 3842 50  0000 L CNN
+F 1 "Conn_01x06" H 8680 3751 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Horizontal" H 8600 3850 50  0001 C CNN
+F 3 "~" H 8600 3850 50  0001 C CNN
+	1    8600 3850
 	1    0    0    -1  
 $EndComp
-Text GLabel 8400 3550 0    50   Input ~ 0
+Text GLabel 8400 3950 0    50   Input ~ 0
 rx
-Text GLabel 8400 3650 0    50   Input ~ 0
+Text GLabel 8400 3850 0    50   Input ~ 0
 tx
 Text GLabel 8400 3750 0    50   Input ~ 0
 5v
-Text GLabel 8400 3350 0    50   Input ~ 0
+Text GLabel 8400 3650 0    50   Input ~ 0
 EN
-Text GLabel 8400 3450 0    50   Input ~ 0
+Text GLabel 8400 4050 0    50   Input ~ 0
 BOOT_OPT
 $Comp
 L power:GND #PWR0105
 U 1 1 608A10F7
-P 8400 3850
-F 0 "#PWR0105" H 8400 3600 50  0001 C CNN
-F 1 "GND" H 8405 3677 50  0000 C CNN
-F 2 "" H 8400 3850 50  0001 C CNN
-F 3 "" H 8400 3850 50  0001 C CNN
-	1    8400 3850
+P 8400 4150
+F 0 "#PWR0105" H 8400 3900 50  0001 C CNN
+F 1 "GND" H 8405 3977 50  0000 C CNN
+F 2 "" H 8400 4150 50  0001 C CNN
+F 3 "" H 8400 4150 50  0001 C CNN
+	1    8400 4150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -419,34 +419,34 @@ txled
 $Comp
 L Device:R_Small R5
 U 1 1 60902AA0
-P 8200 2050
-F 0 "R5" V 8004 2050 50  0000 C CNN
-F 1 "270" V 8095 2050 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 8200 2050 50  0001 C CNN
-F 3 "~" H 8200 2050 50  0001 C CNN
-	1    8200 2050
+P 8200 2350
+F 0 "R5" V 8004 2350 50  0000 C CNN
+F 1 "270" V 8095 2350 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 8200 2350 50  0001 C CNN
+F 3 "~" H 8200 2350 50  0001 C CNN
+	1    8200 2350
 	-1   0    0    1   
 $EndComp
 Text GLabel 5750 4150 2    50   Input ~ 0
 rxled
-Text GLabel 8200 2350 3    50   Input ~ 0
+Text GLabel 8200 2650 3    50   Input ~ 0
 rxled
-Text GLabel 8200 1950 1    50   Input ~ 0
+Text GLabel 8200 2250 1    50   Input ~ 0
 vccio
 $Comp
 L Device:R_Small R6
 U 1 1 6090552B
-P 8600 2050
-F 0 "R6" V 8404 2050 50  0000 C CNN
-F 1 "270" V 8495 2050 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 8600 2050 50  0001 C CNN
-F 3 "~" H 8600 2050 50  0001 C CNN
-	1    8600 2050
+P 8600 2350
+F 0 "R6" V 8404 2350 50  0000 C CNN
+F 1 "270" V 8495 2350 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 8600 2350 50  0001 C CNN
+F 3 "~" H 8600 2350 50  0001 C CNN
+	1    8600 2350
 	-1   0    0    1   
 $EndComp
-Text GLabel 8600 2350 3    50   Input ~ 0
+Text GLabel 8600 2650 3    50   Input ~ 0
 txled
-Text GLabel 8600 1950 1    50   Input ~ 0
+Text GLabel 8600 2250 1    50   Input ~ 0
 vccio
 Text Label 3300 3450 0    50   ~ 0
 in+
@@ -459,23 +459,23 @@ in2-
 $Comp
 L Device:LED_Small D2
 U 1 1 60905532
-P 8600 2250
-F 0 "D2" V 8646 2182 50  0000 R CNN
-F 1 "yellow" V 8555 2182 50  0000 R CNN
-F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 8600 2250 50  0001 C CNN
-F 3 "~" V 8600 2250 50  0001 C CNN
-	1    8600 2250
+P 8600 2550
+F 0 "D2" V 8646 2482 50  0000 R CNN
+F 1 "yellow" V 8555 2482 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 8600 2550 50  0001 C CNN
+F 3 "~" V 8600 2550 50  0001 C CNN
+	1    8600 2550
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:LED_Small D1
 U 1 1 609039AE
-P 8200 2250
-F 0 "D1" V 8246 2182 50  0000 R CNN
-F 1 "green" V 8155 2182 50  0000 R CNN
-F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 8200 2250 50  0001 C CNN
-F 3 "~" V 8200 2250 50  0001 C CNN
-	1    8200 2250
+P 8200 2550
+F 0 "D1" V 8246 2482 50  0000 R CNN
+F 1 "green" V 8155 2482 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 8200 2550 50  0001 C CNN
+F 3 "~" V 8200 2550 50  0001 C CNN
+	1    8200 2550
 	0    -1   -1   0   
 $EndComp
 $EndSCHEMATC

@@ -98,9 +98,9 @@ $FPLIST
  LED_THT:*
 $ENDFPLIST
 DRAW
-P 2 0 1 10 -30 -40 -30 40 N
+P 2 0 1 0 -30 -40 -30 40 N
 P 2 0 1 0 40 0 -30 0 N
-P 4 0 1 10 30 -40 -30 0 30 40 30 -40 N
+P 4 0 1 0 30 -40 -30 0 30 40 30 -40 N
 P 5 0 1 0 0 30 -20 50 -10 50 -20 50 -20 40 N
 P 5 0 1 0 20 50 0 70 10 70 0 70 0 60 N
 X K 1 -100 0 70 R 50 50 1 1 P
@@ -219,11 +219,11 @@ X GND 1 0 0 0 D 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# uart_prog-rescue_USB_B_Micro-Connector
+# uart_prog-rescue_USB_B_Micro-Connector-uart_prog-rescue
 #
-DEF uart_prog-rescue_USB_B_Micro-Connector J 0 40 Y Y 1 F N
+DEF uart_prog-rescue_USB_B_Micro-Connector-uart_prog-rescue J 0 40 Y Y 1 F N
 F0 "J" -200 450 50 H V L CNN
-F1 "uart_prog-rescue_USB_B_Micro-Connector" -200 350 50 H V L CNN
+F1 "uart_prog-rescue_USB_B_Micro-Connector-uart_prog-rescue" -200 350 50 H V L CNN
 F2 "" 150 -50 50 H I C CNN
 F3 "" 150 -50 50 H I C CNN
 $FPLIST
