@@ -275,33 +275,33 @@ vccio
 $Comp
 L Connector_Generic:Conn_01x06 J2
 U 1 1 6089F7A4
-P 8600 3850
-F 0 "J2" H 8680 3842 50  0000 L CNN
-F 1 "Conn_01x06" H 8680 3751 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Horizontal" H 8600 3850 50  0001 C CNN
-F 3 "~" H 8600 3850 50  0001 C CNN
-	1    8600 3850
-	1    0    0    -1  
+P 8600 4000
+F 0 "J2" H 8680 3992 50  0000 L CNN
+F 1 "Conn_01x06" H 8680 3901 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Horizontal" H 8600 4000 50  0001 C CNN
+F 3 "~" H 8600 4000 50  0001 C CNN
+	1    8600 4000
+	-1   0    0    1   
 $EndComp
-Text GLabel 8400 3950 0    50   Input ~ 0
+Text GLabel 8800 3700 2    50   Input ~ 0
 rx
-Text GLabel 8400 3850 0    50   Input ~ 0
+Text GLabel 8800 4000 2    50   Input ~ 0
 tx
-Text GLabel 8400 3750 0    50   Input ~ 0
+Text GLabel 8800 4100 2    50   Input ~ 0
 5v
-Text GLabel 8400 3650 0    50   Input ~ 0
+Text GLabel 8800 3900 2    50   Input ~ 0
 EN
-Text GLabel 8400 4050 0    50   Input ~ 0
+Text GLabel 8800 3800 2    50   Input ~ 0
 BOOT_OPT
 $Comp
 L power:GND #PWR0105
 U 1 1 608A10F7
-P 8400 4150
-F 0 "#PWR0105" H 8400 3900 50  0001 C CNN
-F 1 "GND" H 8405 3977 50  0000 C CNN
-F 2 "" H 8400 4150 50  0001 C CNN
-F 3 "" H 8400 4150 50  0001 C CNN
-	1    8400 4150
+P 8800 4200
+F 0 "#PWR0105" H 8800 3950 50  0001 C CNN
+F 1 "GND" H 8805 4027 50  0000 C CNN
+F 2 "" H 8800 4200 50  0001 C CNN
+F 3 "" H 8800 4200 50  0001 C CNN
+	1    8800 4200
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
