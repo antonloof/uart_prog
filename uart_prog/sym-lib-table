@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name uart_prog-rescue)(type Legacy)(uri ${KIPRJMOD}/uart_prog-rescue.lib)(options "")(descr ""))
+)
