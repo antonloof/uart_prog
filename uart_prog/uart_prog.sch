@@ -241,7 +241,7 @@ F 3 "~" H 6800 3900 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Text GLabel 7200 3000 1    50   Input ~ 0
-EN
+RESET
 Text GLabel 7200 4100 3    50   Input ~ 0
 BOOT_OPT
 Text GLabel 6550 3900 0    50   Input ~ 0
@@ -290,7 +290,7 @@ tx
 Text GLabel 8800 4100 2    50   Input ~ 0
 5v
 Text GLabel 8800 3900 2    50   Input ~ 0
-EN
+RESET
 Text GLabel 8800 3800 2    50   Input ~ 0
 BOOT_OPT
 $Comp
